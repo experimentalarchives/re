@@ -3,12 +3,9 @@
 var color;
 function changecolor() {
     color = document.getElementById("playercolor").value;
-    document.getElementById("xtrackname").style.color = "#" + color;
-    document.getElementById("pbar1").style.background = "#" + color;
-    document.getElementById("pbar2").style.background = "#" + color;
-    document.getElementById("xplay").style.borderLeft = "6px solid " + "#" + color;
-    document.getElementById("sk1").style.borderLeft = "4px solid " + "#" + color;
-    document.getElementById("sk2").style.borderLeft = "4px solid " + "#" + color;
+    document.getElementById("xskip");
+    xskip.onmouseover = function() { this.style.color = "#" + color; };
+    xskip.onmouseout = function() { this.style.opacity = "#" + color; };
 }
 
 // turn autoplay on or off function
